@@ -1,3 +1,11 @@
+# Config
+
+`docker compose up --build -d`
+- host: localhost
+- database: XE
+- username: testmigration
+- password: TestUser123
+
 # Oracle Long field bug
 
 field name
