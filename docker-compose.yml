@@ -17,16 +17,16 @@ services:
       timeout: 2s
       retries: 5
 
-  web:
-    build: .
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - ./djangosite:/code
-    ports:
-      - "8000:8000"
-    depends_on:
-      oracle:
-        condition: service_healthy
+  # web:
+  #   build: .
+  #   command: python manage.py runserver 0.0.0.0:8000
+  #   volumes:
+  #     - ./djangosite:/code
+  #   ports:
+  #     - "8000:8000"
+  #   depends_on:
+  #     oracle:
+  #       condition: service_healthy
 
 volumes:
   oracle-data:
